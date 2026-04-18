@@ -63,7 +63,7 @@ function actualizarPantalla(){
     graficarComida();
     detectarColision();
 }
-
+// Detecta cuando llega a comida
 function detectarColision(){
     if (
         gatoX + ANCHO_GATO > comidaX &&
