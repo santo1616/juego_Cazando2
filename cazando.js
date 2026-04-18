@@ -102,3 +102,15 @@ function restarTiempo() {
         alert("Game Over");
     }
 }
+
+function reiniciarJuego() {
+    clearInterval(intervalo);
+
+    puntaje = 0;
+    tiempo = 10;
+
+    mostrarEnSpan("puntos", puntaje);
+    mostrarEnSpan("tiempo", tiempo);
+
+    iniciarJuego();
+}
