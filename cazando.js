@@ -10,8 +10,11 @@ let gatoX = 0;
 let gatoY = 0;
 let comidaX = 0;
 let comidaY = 0;
+let puntaje = 0;
+
 
 function iniciarJuego() {
+    mostrarEnSpan("puntos",puntaje);
     gatoX = (canvas.width / 2) - (ANCHO_GATO / 2);
     gatoY = (canvas.height / 2) - (ALTO_GATO / 2);
 
@@ -72,6 +75,9 @@ function detectarColision(){
         gatoY + ALTO_GATO > comidaY &&
         gatoY < comidaY + ALTO_COMIDA
     ) {
+        puntaje=puntaje +1;
+        mostrarEnSpan("puntos",puntaje)
+
         // mover la comida a una nueva posición aleatoria
         comidaX = generarAleatorio(0, canvas.width - ANCHO_COMIDA);
         comidaY = generarAleatorio(0, canvas.height - ALTO_COMIDA);
