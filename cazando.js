@@ -59,9 +59,10 @@ function moverAbajo(){
 
 function actualizarPantalla(){
     limpiarCanva();
+    detectarColision();
     graficarGato();
     graficarComida();
-    detectarColision();
+    
 }
 // Detecta cuando llega a comida
 function detectarColision(){
@@ -71,6 +72,9 @@ function detectarColision(){
         gatoY + ALTO_GATO > comidaY &&
         gatoY < comidaY + ALTO_COMIDA
     ) {
-        alert("El gato atrapó la comida");
+        // mover la comida a una nueva posición aleatoria
+        comidaX = generarAleatorio(0, canvas.width - ANCHO_COMIDA);
+        comidaY = generarAleatorio(0, canvas.height - ALTO_COMIDA);
+
     }
 }
