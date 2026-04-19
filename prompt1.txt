@@ -1,0 +1,3 @@
+juego cazando te voy a pasar el css y el html necesito que le mejores visualmente asumiendo que eres un diseñador de app móviles actual, no cambies id ni nada de la estructura solo trabaja en estos 2 archivos no asumas nada y no crees ningún js”
+
+“Rediseña la interfaz visual del juego utilizando únicamente HTML y CSS, con un estilo moderno tipo aplicación móvil. Mantén intacta la estructura HTML y todos los IDs existentes, sin modificar la lógica ni añadir JavaScript.”
