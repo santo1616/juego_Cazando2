@@ -107,7 +107,7 @@ function reiniciarJuego() {
     clearInterval(intervalo);
 
     puntaje = 0;
-    tiempo = 10;
+    tiempo = 50;
 
     mostrarEnSpan("puntos", puntaje);
     mostrarEnSpan("tiempo", tiempo);
